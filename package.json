@@ -1,0 +1,32 @@
+{
+  "name": "m-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp",
+    "mock": "json-server ./mock/mock.js --routes ./mock/routes.json --port 9099"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.7.0",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/runtime": "^7.7.1",
+    "babel-loader": "^8.0.6",
+    "gulp": "^4.0.2",
+    "gulp-webserver": "^0.9.1",
+    "http-proxy-middleware": "^0.20.0",
+    "string-loader": "0.0.1",
+    "webpack": "^4.41.2",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.0"
+  }
+}

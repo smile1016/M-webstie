@@ -1,0 +1,64 @@
+html{
+    font-family: Helvetica;
+    font-size: 26.66667vw; // 100px 转换成 vw
+    height: 100%;
+}
+body{
+    height: 100%;
+    font-size: 0.14rem;
+}
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    header{
+        height: 0.45rem;
+        text-align: center;
+        line-height: 0.45rem;
+        font-size: 0.18rem;
+        background: #00b38a;
+        color: #fff;
+    }
+    main{
+        flex: 1;
+        position: relative;
+        overflow-y: auto;
+    }
+    nav {
+        background: #f6f6f6;
+        ul{
+            display: flex;
+            margin: 0;
+            padding: 0;
+        } 
+        li{
+            
+            flex: 1;
+            line-height: 45px;
+            text-align: center;
+            display: inline-block;
+            list-style: none;
+            font-size:16.768px;
+            color: #c2cfcc;
+            i{
+                font-family: 'iconfont'!important;
+                font-style: normal;
+                margin-right: 2px;
+            }
+            
+        }
+        li.active{
+            background: #e7f3f0;
+            color: #00b380;
+        }
+    }
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: 
+        url('../libs/iconfont.woff2') format('woff2'),
+        url('../libs/iconfont.woff') format('woff'),
+        url('../libs/iconfont.ttf') format('truetype'),
+
+  }

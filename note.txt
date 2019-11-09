@@ -1,0 +1,25 @@
+**下拉刷新 https://better-scroll.github.io/docs/zh-CN/guide/how-to-install.html#npm
+npm i @better-scroll/core@next --save
+
+1.content的高度小于wrapper
+    wrapper只能有一个子节点
+2.实例化之前的dom元素必须已经生成
+
+
+
+
+M-website
+首页index布局：只布局头尾，中间内容放入分页面html
+首页路由跳转：
+    1.使用hash，给模块添加data-hash自定义属性 
+    2.Routes.js配置 路由，index.js调用，controller层接受并且导入对应的html页面，放入index.html页面中间内容
+职位页面数据获取
+    1.使用本地模拟数据：mock.js+json-server
+        安装json-server：
+        将模拟数据写入db.json
+        配置 routes.json 
+        json-server --watch ./mock/db.json 
+        json-server ./mock/mock.js --routes ./mock/routes.json --port 9090
+    2.使用网络接口数据
+
+

@@ -1,29 +1,39 @@
-
-    <div id="loading">
-        <img src="../images/loading.gif" alt="">
-    </div>
-    <div class="custom">
-        <span>
-            10秒钟定制职位
-        </span>
-        <button>去登录</button>
-    </div>
-    <div id="list-container">
-        
-        <!-- <% for(var i = 0;i<list.length;i++){ %>
-        <div class="item">
-            <div class="logo">
-                <img src="https://www.lgstatic.com/<%=list[i].companyLogo %>" alt="">
-            </div>
-
-            <div class="desc">
-                <h2><%=list[i].companyName %></h2>
-                <p><%=list[i]['positionName'] %></p>
-                <p><%=list[i]['createTime'] %></p>
-            </div>
-            <div class="salary">
-                    <%=list[i]['salary'] %>
-            </div>
+<div id="position-wrapper">
+    <div>
+        <div id="loading">
+            <img src="../images/loading.gif" alt="">
         </div>
-        <% } %> -->
+        <div class="head">
+                <img src="../images/arrow.png" alt="">
+            下拉刷新
+        </div>
+        <div class="custom">
+            <span>
+                10秒钟定制职位
+            </span>
+            <button>去登录</button>
+        </div>
+        <div id="list-container">
+
+            <!-- <% for(var i = 0;i<list.length;i++){ %>
+                    <div class="item">
+                        <div class="logo">
+                            <img src="https://www.lgstatic.com/<%=list[i].companyLogo %>" alt="">
+                        </div>
+            
+                        <div class="desc">
+                            <h2><%=list[i].companyName %></h2>
+                            <p><%=list[i]['positionName'] %></p>
+                            <p><%=list[i]['createTime'] %></p>
+                        </div>
+                        <div class="salary">
+                                <%=list[i]['salary'] %>
+                        </div>
+                    </div>
+                    <% } %> -->
+        </div>
+        <div class="foot">
+            上拉加载更多
+        </div>
     </div>
+</div>

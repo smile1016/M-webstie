@@ -1,0 +1,40 @@
+#search-container{
+    height: 100%;
+    .search{
+        width: 100%;
+        height: 0.45rem;
+        display: flex;
+        .selectcity{
+            display: inline-block;
+            line-height: 0.45rem;
+            text-align: center;
+            border-bottom: 1px solid #999;
+            border-right: 1px solid #999;
+            width: 23.33%;
+        }
+        input{
+            display: inline-block;
+            height: 0.42rem;
+            margin: 0;
+            padding-left: 0.1rem;
+            font-size: 0.15rem;
+            border: none;
+            border-bottom: 1px solid #999;
+            flex: 1;
+        }
+        input:focus{
+            outline: medium;
+        }
+        .search-btn{
+            display: inline-block;
+            width: 15.5%;
+            border-bottom: 1px solid #999;
+            line-height: 0.45rem;
+            text-align: center;
+        }
+    }
+    .foot{
+        line-height: 0.45rem;
+        text-align: center;
+      }
+}

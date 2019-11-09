@@ -3,7 +3,7 @@ import SearchController from '../controller/SearchController.js';
 import ProfileController from '../controller/ProfileController.js'
 import ErrorController from '../controller/ErrorController.js'
 
-const MODE = 'history'
+const MODE = 'hash'
 class Router{
     constructor(){
         this.routes = {
@@ -37,21 +37,6 @@ class Router{
             window.addEventListener('hashchange',()=>{
                 let hash = location.hash.replace('#','');
                 this.loadView(hash);
-    
-            // switch(hash){
-            //     case 'position':
-            //         PositionController.render();
-            //         break;
-            //     case 'search':
-            //         SearchController.render();
-            //         break;
-            //     case 'profile':
-            //         ProfileController.render()
-            //         break;
-            //     default:
-            //         ErrorController.render();
-            //         break;
-            // }
             })
         }
         else{

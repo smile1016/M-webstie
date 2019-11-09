@@ -1,8 +1,9 @@
 class Fetch{
-    getPositionlist(){
+    getPositionlist(params){
+        let {name,pageNo,pageSize} = params;
         return new Promise((resolve,reject)=>{
             $.ajax({
-                url:'/fetch/listmore.json?pageNo=1&pageSize=15',
+                url:`/fetch/${name}.json?pageNo=${pageNo}&pageSize=${pageSize}`,
                 type:'GET',
                 success(result){
                     resolve(result) ;

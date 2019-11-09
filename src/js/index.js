@@ -11,6 +11,11 @@ class Index{
             // location.hash = hash;
             Router.go(hash)
         })
+        $(window).on('hashchange',()=>{
+            let hash = location.hash.replace('#','');
+            $('index_nav').find('li[data-hash="'+hash+'"]')
+            $(this).addClass('active').siblings().removeClass('active');
+        })
     }
 }
 new Index()
